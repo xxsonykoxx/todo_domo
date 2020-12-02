@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TODO</title>
+    <link rel="stylesheet" href="/dist/css/all.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h3>TodoList</h3>
+      </header>
+      <content>
+        <div class="add">
+          <input
+            class="todo_input"
+            type="text"
+            placeholder="今晚我想來點..."
+          /><i class="fas fa-pen-square" id="addBTN"></i>
+        </div>
+        <div class="list">
+          <ul class="todolist"></ul>
+          <!--✰ 這邊用渲染的 ✰-->
+          <!-- <li class="todo">
+            <div class="text_group">
+              <p class="id">1.</p>
+              <p class="text">南洋咖哩雞</p>
+            </div>
+            <i class="fas fa-trash"></i>
+          </li> -->
+          <!-- <li class="todo">
+            <div class="text_group">
+              <p class="id">2.</p>
+              <p class="text">南洋咖哩雞</p>
+            </div>
+            <i class="fas fa-trash"></i>
+          </li>
+          <li class="todo">
+            <div class="text_group">
+              <p class="id">3.</p>
+              <p class="text">南洋咖哩雞</p>
+            </div>
+            <i class="fas fa-trash"> </i>
+          </li> -->
+        </div>
+      </content>
+      <footer>
+        <p class="del">delete All</p>
+        <p>共 <span class="length">0 </span>筆</p>
+      </footer>
+    </div>
+    <script src="JS/all.js"></script>
+  </body>
+</html>

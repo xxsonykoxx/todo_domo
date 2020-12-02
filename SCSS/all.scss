@@ -1,0 +1,112 @@
+$background: #f7e3ed;
+$content: #ae7591;
+$sub: #e1ceea;
+$border: #f1d3ff;
+$title: #f7f6ef;
+$icon: #8bd3c7;
+
+/* ✰⋆｡:ﾟ･*☽:ﾟ･⋆｡✰⋆｡:ﾟ･*☽:ﾟ */
+* {
+  font-family: "Roboto Mono", "Sawarabi Gothic", sans-serif;
+  box-sizing: border-box;
+  letter-spacing: 1.7px;
+}
+body {
+  background-color: $background;
+}
+.container {
+  max-width: 360px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 5px;
+  background-color: lighten($background, 7%);
+}
+header {
+  height: 40px;
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  background-color: $sub;
+  border-radius: 5px 5px 0px 0px;
+  h3 {
+    padding: 3px;
+    color: $title;
+  }
+}
+.add {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  i:hover {
+    color: darken($sub, 10%);
+  }
+  input {
+    width: 90%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid $border;
+    padding-left: 10px;
+    color: $sub;
+    &:focus {
+      outline: none;
+    }
+    &::placeholder {
+      color: $sub;
+    }
+  }
+  i {
+    font-size: 30px;
+    margin-left: 5px;
+    color: $border;
+    cursor: pointer;
+  }
+}
+.list ul {
+  list-style: none;
+  padding-inline-start: 0px;
+}
+.list {
+  font-size: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid lighten($sub, 8%);
+    color: darken($sub, 10%);
+    i {
+      cursor: pointer;
+      color: $icon;
+      &:hover {
+        color: darken($icon, 10%);
+      }
+    }
+  }
+
+  .text {
+    margin-left: 10px;
+  }
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+  p {
+    font-size: 12px;
+    color: $icon;
+    text-align: right;
+    padding: 10px;
+    padding-right: 20px;
+  }
+  .del {
+    margin-left: 10px;
+    cursor: pointer;
+    &:hover {
+      color: $sub;
+    }
+  }
+}
+.text_group {
+  display: flex;
+}
